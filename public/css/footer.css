@@ -1,0 +1,17 @@
+.footer {
+    color: #fff;
+    background: linear-gradient(90deg, #46074e 0%, #1980da 70%);
+    text-align: center;
+    font-size: 13px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.footer p {
+    margin: 0;
+    letter-spacing: 0.3px;
+}

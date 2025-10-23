@@ -1,0 +1,538 @@
+body {
+    font-family: "Ubuntu", sans-serif !important;
+    background-color: #ffffff;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.hero-section {
+    position: relative;
+    background-image: url("../images/latar.png");
+    background-size: cover;
+    background-position: center;
+    height: calc(100vh + 40px);
+    display: flex;
+    align-items: flex-end;
+    padding-left: 80px;
+    justify-content: flex-start;
+    color: white;
+    margin-top: -40px;
+    z-index: 1;
+}
+
+.hero-content {
+    background: linear-gradient(to right, #46074e, rgb(25, 123, 208, 0.8));
+    box-shadow: 10px 10px 4px 0px oklch(0% 0 0 / 0.2);
+    position: absolute;
+    bottom: 14%;
+    left: 5%;
+    width: 621px;
+    height: 120px;
+    max-width: 90%;
+    align-items: center;
+    padding: 30px 40px;
+    margin: 20px;
+    text-align: start;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.hero-content::before {
+    content: "";
+    position: absolute;
+    left: 27px;
+    top: 0;
+    width: 1px;
+    height: 70%;
+    background-color: hsla(0, 0%, 100%, 0.4);
+    border-radius: 2px;
+}
+
+.hero-content h2 {
+    font-size: 20px;
+    padding-left: 10px;
+    font-weight: 500;
+    color: white;
+    margin: 0 0;
+}
+
+.hero-content p {
+    color: #fff;
+    margin: 0;
+}
+
+.btn-hero {
+    background-color: transparent;
+    color: white;
+    border: 1px solid #fff;
+    padding: 12px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.btn-hero:hover {
+    background-color: #174bcf;
+}
+
+.tentang-section {
+    background-color: #ffffff;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 400px;
+}
+
+.tentang-section h2 {
+    font-size: 24px;
+    font-weight: 500;
+    color: #4a4a4a;
+}
+
+.tentang-text {
+    font-size: 18px;
+    max-width: 700px;
+    line-height: 1.8;
+    color: #555;
+}
+
+.layanan-section {
+    max-width: 1366px;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+
+.layanan-section h2 {
+    font-size: 24px;
+    margin-bottom: 50px;
+    font-weight: 500;
+    color: #4a4a4a;
+}
+
+.layanan-section .row {
+    --bs-gutter-x: 20px;
+    --bs-gutter-y: 20px;
+}
+
+.custom-card {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    border-radius: 6px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 0 auto;
+    max-width: 360px;
+}
+
+.custom-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+.card-img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.gradient-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to right,
+        rgba(70, 7, 78, 1) 1%,
+        rgba(25, 123, 208, 0.3) 30%,
+        rgba(25, 123, 208, 0.2) 50%,
+        transparent 60%
+    );
+}
+
+.card-content {
+    position: absolute;
+    bottom: 20px;
+    left: 19px;
+    display: flex;
+    align-items: center;
+}
+
+.card-content h5 {
+    color: #fff;
+}
+
+.left-line {
+    position: absolute;
+    top: 0;
+    left: 20px;
+    width: 1px;
+    height: 75%;
+    background-color: hsla(0, 0%, 100%, 0.4);
+}
+
+.card-title {
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.mitra-section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.mitra-section h2 {
+    font-size: 24px;
+    padding-bottom: 30px;
+    font-weight: 500;
+    color: #4a4a4a;
+}
+
+.mitra-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.mitra-card {
+    aspect-ratio: 16 / 9;
+    max-width: 240px;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mitra-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+.mitra-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 10px;
+}
+
+.konseling-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+}
+
+.konseling-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #46074e, #197bd0);
+    border-radius: 10px;
+    padding: 25px 35px;
+    color: white;
+    width: 100%;
+    max-width: 860px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.konseling-box:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.konseling-text h2 {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0;
+    text-align: left;
+}
+
+.konseling-text p {
+    font-size: 16px;
+    opacity: 0.9;
+    font-weight: 300;
+    margin: 5px 0 0 0;
+    text-align: left;
+}
+.konseling-btn {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 10px 22px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.konseling-btn:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.artikel-section {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.artikel-section h2 {
+    font-size: 24px;
+    padding-bottom: 30px;
+    font-weight: 500;
+    color: #4a4a4a;
+}
+
+.artikel-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 360px);
+    gap: 25px 25px;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.artikel-card {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    max-width: 360px;
+    width: 100%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    justify-self: center;
+}
+
+.artikel-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.artikel-card img {
+    width: 100%;
+    height: 195px;
+    object-fit: cover;
+}
+
+.artikel-card p {
+    font-size: 15px;
+    color: #333;
+    margin: 12px 15px;
+}
+
+.btn-artikel {
+    display: inline-block;
+    padding: 8px 50px;
+    font-weight: 500;
+    font-size: 13.5px;
+    text-transform: uppercase;
+    color: #2a3eae;
+    border-radius: 50px;
+    background: white;
+    border: 1px solid transparent;
+    background-image: linear-gradient(white, white),
+        linear-gradient(90deg, #6a0dad, #1e90ff);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-artikel:hover {
+    color: white;
+    background: linear-gradient(90deg, #6a0dad, #1e90ff);
+}
+
+.hubungi-section {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.hubungi-section h2 {
+    font-size: 24px;
+    font-weight: 500;
+    color: #4a4a4a;
+}
+
+.hubungi-section h5 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #4a4a4a;
+}
+
+.hubungi-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.btn-lokasi {
+    width: 200px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: white;
+    border-radius: 50px;
+    background: linear-gradient(90deg, #6a0dad, #1e90ff);
+    border: none;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-lokasi:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+.btn-pesan {
+    width: 200px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #1e90ff;
+    border-radius: 50px;
+    background: white;
+    border: 1px solid transparent;
+    background-image: linear-gradient(white, white),
+        linear-gradient(90deg, #6a0dad, #1e90ff);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-pesan:hover {
+    color: white;
+    background: linear-gradient(90deg, #6a0dad, #1e90ff);
+    transform: translateY(-2px);
+}
+
+@media (max-width: 992px) {
+    .artikel-grid {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .artikel-card {
+        width: 90%;
+        max-width: 360px;
+    }
+
+    .konseling-box {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+        padding: 30px 20px;
+    }
+
+    .konseling-text h2 {
+        font-size: 17px;
+        text-align: center;
+    }
+
+    .konseling-text p {
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .custom-card {
+        max-width: 300px;
+    }
+
+    .mitra-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .custom-card {
+        max-width: 260px;
+    }
+
+    .tentang-section h2 {
+        font-size: 26px;
+    }
+
+    .tentang-text {
+        font-size: 16px;
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 685px) {
+    .hero-content {
+        width: 90%;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        gap: 15px;
+        height: auto;
+        padding: 20px 20px;
+    }
+
+    .hero-content h2 {
+        font-size: 18px;
+    }
+
+    .btn-hero {
+        font-size: 14px;
+        padding: 8px 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .konseling-box {
+        width: 100%;
+        padding: 25px 15px;
+    }
+
+    .konseling-text h2 {
+        font-size: 16px;
+    }
+
+    .konseling-btn {
+        font-size: 14px;
+        padding: 8px 18px;
+    }
+
+    .custom-card {
+        max-width: 90%;
+    }
+
+    .mitra-grid {
+        grid-template-columns: 1fr;
+    }
+}

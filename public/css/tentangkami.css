@@ -1,0 +1,270 @@
+body {
+    font-family: "Ubuntu", sans-serif !important;
+    background-color: #ffffff;
+}
+
+.tentangkami-section {
+    position: relative;
+    background-image: url("../images/studytour.png");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    max-width: 1366px;
+    height: 500px;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-end;
+    padding: 0 80px 40px;
+    color: white;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.overlay-tentang {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to right,
+        rgba(70, 7, 78, 0.9) 0%,
+        rgba(70, 7, 78, 0.5) 40%,
+        rgba(70, 7, 78, 0.2) 70%,
+        transparent 100%
+    );
+    z-index: 0;
+}
+
+.tentangkami-content {
+    position: relative;
+    z-index: 1;
+}
+
+.tentangkami-content h2 {
+    font-size: 24px;
+    font-weight: 500;
+    color: white;
+    margin: 0;
+    padding-left: 10px;
+}
+
+.profil-visi-misi-section {
+    background-color: #fff;
+    padding: 60px 20px;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-profil {
+    width: 100%;
+    max-width: 1000px;
+    margin-bottom: 50px;
+}
+
+.container-profil h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: #4a4a4a;
+}
+
+.profil-text {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #555;
+    text-align: left;
+}
+
+.container-visi-misi {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1000px;
+    margin: 0 auto;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.container-visi-misi img {
+    width: 100%;
+    max-width: 480px;
+    height: auto;
+    aspect-ratio: 1000 / 538;
+    object-fit: cover;
+}
+
+.container-visi-misi h3 {
+    font-size: 22px;
+    font-weight: 400;
+    margin: 16px 0 10px;
+    text-align: left;
+}
+
+.container-visi-misi p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #555;
+    text-align: left;
+}
+
+.visi h3,
+.misi h3 {
+    margin-top: 70px;
+}
+
+.visi,
+.misi {
+    flex: 1;
+    min-width: 300px;
+}
+
+.btn-wrapper {
+    text-align: center;
+    margin-top: 120px;
+}
+
+.btn-layanan {
+    display: inline-block;
+    padding: 8px 40px;
+    font-size: 16px;
+    color: #336195;
+    text-decoration: none;
+    background: linear-gradient(white, white) padding-box,
+        linear-gradient(to right, #46074e, rgba(25, 123, 208, 0.8)) border-box;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.btn-layanan:hover {
+    background: linear-gradient(to right, #46074e, rgba(25, 123, 208, 0.8))
+            padding-box,
+        linear-gradient(to right, #46074e, rgba(25, 123, 208, 0.8)) border-box;
+    color: #fff;
+}
+
+.hubungi-tentang-section {
+    max-width: 900px;
+    margin: 0 auto;
+}
+.hubungi-tentang-section h2 {
+    font-size: 24px;
+    font-weight: 500;
+    color: #4a4a4a;
+}
+.hubungi-tentang-section h5 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #4a4a4a;
+}
+
+.hubungi-tentang-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.btn-lokasi-tentang {
+    width: 200px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: white;
+    border-radius: 50px;
+    background: linear-gradient(90deg, #6a0dad, #1e90ff);
+    border: none;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-lokasi-tentang:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+.btn-pesan-tentang {
+    width: 200px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #1e90ff;
+    border-radius: 50px;
+    background: white;
+    border: 1px solid transparent;
+    background-image: linear-gradient(white, white),
+        linear-gradient(90deg, #6a0dad, #1e90ff);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-pesan-tentang:hover {
+    color: white;
+    background: linear-gradient(90deg, #6a0dad, #1e90ff);
+    transform: translateY(-2px);
+}
+
+@media (max-width: 1024px) {
+    .container-profil,
+    .container-visi-misi {
+        max-width: 90%;
+    }
+
+    .container-visi-misi {
+        gap: 20px;
+    }
+
+    .container-visi-misi img {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 992px) {
+    .tentangkami-section {
+        height: 400px;
+        padding: 0 40px 30px;
+    }
+
+    .tentangkami-content h2 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .profil-text {
+        font-size: 16px;
+    }
+
+    .container-visi-misi h3 {
+        text-align: center;
+    }
+
+    .container-visi-misi p {
+        text-align: justify;
+    }
+
+    .btn-layanan {
+        width: 100%;
+        max-width: 200px;
+    }
+
+    .tentangkami-section {
+        height: 300px;
+        padding: 0 20px 20px;
+    }
+
+    .tentangkami-content h2 {
+        font-size: 18px;
+        padding-left: 5px;
+    }
+}

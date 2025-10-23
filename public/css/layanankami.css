@@ -1,0 +1,199 @@
+body {
+    font-family: "Ubuntu", sans-serif !important;
+    background-color: #ffffff;
+}
+.layanankami-section {
+    position: relative;
+    background-image: url("../images/gatescambride.png");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    max-width: 1366px;
+    height: 500px;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-end;
+    padding: 0 80px 40px;
+    color: white;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.overlay-layanan {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to right,
+        rgba(70, 7, 78, 0.9) 0%,
+        rgba(70, 7, 78, 0.5) 40%,
+        rgba(70, 7, 78, 0.2) 70%,
+        transparent 100%
+    );
+    z-index: 0;
+}
+
+.layanankami-content {
+    position: relative;
+    z-index: 1;
+}
+
+.layanankami-content h2 {
+    font-size: 24px;
+    font-weight: 500;
+    color: white;
+    margin: 0;
+    padding-left: 10px;
+}
+
+.layanan-kami-section {
+    max-width: 1366px;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+
+.layanan-kami-section h2 {
+    font-size: 24px;
+    margin-bottom: 50px;
+    font-weight: 500;
+    color: #4a4a4a;
+}
+
+.layanan-kami-section .row {
+    --bs-gutter-x: 20px;
+    --bs-gutter-y: 20px;
+}
+
+.custom-card-kami {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    border-radius: 6px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 0 auto;
+    max-width: 360px;
+}
+
+.custom-card-kami:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+.card-img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.gradient-overlay-kami {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to right,
+        rgba(70, 7, 78, 1) 1%,
+        rgba(25, 123, 208, 0.3) 30%,
+        rgba(25, 123, 208, 0.2) 50%,
+        transparent 60%
+    );
+}
+
+.card-content-kami {
+    position: absolute;
+    bottom: 20px;
+    left: 19px;
+    display: flex;
+    align-items: center;
+}
+
+.card-content-kami h5 {
+    color: #fff;
+}
+
+.left-line-kami {
+    position: absolute;
+    top: 0;
+    left: 20px;
+    width: 1px;
+    height: 75%;
+    background-color: hsla(0, 0%, 100%, 0.4);
+}
+
+.card-title-kami {
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.lkami-section {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.lkami-section h2 {
+    font-size: 24px;
+    font-weight: 500;
+    color: #4a4a4a;
+}
+
+.lkami-section h5 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #4a4a4a;
+}
+
+.lkami-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.btn-lokasi-lkami {
+    width: 200px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: white;
+    border-radius: 50px;
+    background: linear-gradient(90deg, #6a0dad, #1e90ff);
+    border: none;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-lokasi-lkami:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+.btn-pesan-lkami {
+    width: 200px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #1e90ff;
+    border-radius: 50px;
+    background: white;
+    border: 1px solid transparent;
+    background-image: linear-gradient(white, white),
+        linear-gradient(90deg, #6a0dad, #1e90ff);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-pesan-lkami:hover {
+    color: white;
+    background: linear-gradient(90deg, #6a0dad, #1e90ff);
+    transform: translateY(-2px);
+}
