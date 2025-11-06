@@ -4,9 +4,6 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
-use Illuminate\Support\Facades\Mail;
-use App\Mail\ContactMail;
-use App\Models\Contact;
 
 class ContactController extends Controller
 {
@@ -31,7 +28,6 @@ class ContactController extends Controller
                 ]
             );
         } else {
-           
             $response = Http::asForm()->post(
                 'https://www.google.com/recaptcha/api/siteverify',
                 [
@@ -47,22 +43,6 @@ class ContactController extends Controller
             return back()->withErrors(['captcha' => 'Verifikasi reCAPTCHA gagal.'])->withInput();
         }
 
-        $contact = Contact::create([
-            'nama'        => $request->nama,
-            'email'       => $request->email,
-            'perusahaan'  => $request->perusahaan,
-            'telepon'     => $request->telepon,
-            'pesan'       => $request->pesan,
-        ]);
-
-        Mail::to('frhnaldiin@gmail.com')->send(new ContactMail([
-            'nama'        => $contact->nama,
-            'email'       => $contact->email,
-            'perusahaan'  => $contact->perusahaan,
-            'telepon'     => $contact->telepon,
-            'pesan'       => $contact->pesan,
-        ]));
-
-        return back()->with('success', 'Pesan kamu sudah terkirim dan tersimpan!');
+        return back()->with('success', 'Pesan kamu sudah terkirim! (Tanpa simpan & tanpa email)');
     }
 }

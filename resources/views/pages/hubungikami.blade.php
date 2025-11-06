@@ -18,8 +18,7 @@
       <div class="col-lg-11 col-xl-10">
         <h3 class="mb-4 fw-semibold text-uppercase">Kirim Pesan</h3>
 
-        <form id="contactForm" action="{{ route('contact.send') }}" method="POST" onsubmit="return validateRecaptcha()">
-          @csrf
+        <form id="contactForm" method="POST" onsubmit="return validateRecaptcha()">
 
           <div class="row g-3">
             <div class="col-md-6">

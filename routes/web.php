@@ -34,6 +34,3 @@ Route::get('/artikelkami', function () {
 Route::get('/hubungikami', function () {
     return view('pages.hubungikami');
 });
-
-Route::post('/contact/send', [ContactController::class, 'send'])->name('contact.send');
-
