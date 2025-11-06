@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ContactController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -16,12 +18,22 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('pages.home');
 });
+
 Route::get('/tentangkami', function () {
     return view('pages.tentangkami');
 });
+
 Route::get('/layanankami', function () {
     return view('pages.layanankami');
 });
 
+Route::get('/artikelkami', function () {
+    return view('pages.artikelkami');
+});
 
+Route::get('/hubungikami', function () {
+    return view('pages.hubungikami');
+});
+
+Route::post('/contact/send', [ContactController::class, 'send'])->name('contact.send');
 

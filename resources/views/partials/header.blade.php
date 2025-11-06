@@ -37,7 +37,7 @@
                   <a class="nav-link {{ Request::is('layanankami') ? 'active' : '' }}" href="{{ url('/layanankami') }}">Layanan Kami</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link {{ Request::is('artikel') ? 'active' : '' }}" href="{{ url('/artikel') }}">Artikel</a>
+                  <a class="nav-link {{ Request::is('artikelkami') ? 'active' : '' }}" href="{{ url('/artikelkami') }}">Artikel</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link {{ Request::is('hubungikami') ? 'active' : '' }}" href="{{ url('/hubungikami') }}">Hubungi Kami</a>

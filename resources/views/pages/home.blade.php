@@ -174,7 +174,7 @@
 
     <div class="hubungi-buttons">
       <a href="#" class="btn-lokasi">LOKASI KAMI</a>
-      <a href="#" class="btn-pesan">KIRIM PESAN</a>
+      <a href="hubungikami" class="btn-pesan">KIRIM PESAN</a>
     </div>
   </div>
 </section>

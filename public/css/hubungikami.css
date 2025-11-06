@@ -1,0 +1,258 @@
+body {
+    font-family: "Ubuntu", sans-serif !important;
+    background-color: #ffffff;
+}
+
+.hukami-section {
+    position: relative;
+    background-image: url("../images/becak.png");
+    background-size: cover;
+    background-position-y: 60%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 280px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding: 0 10vw 5vh;
+    color: white;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.overlay-hukami {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to right,
+        rgba(70, 7, 78, 0.9) 0%,
+        rgba(70, 7, 78, 0.5) 40%,
+        rgba(70, 7, 78, 0.2) 70%,
+        transparent 100%
+    );
+    z-index: 0;
+}
+
+.hukami-content {
+    position: relative;
+    z-index: 1;
+    left: -15px;
+    bottom: 35px;
+}
+
+.hukami-content h2 {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: white;
+    margin: 0;
+}
+
+.contact-section {
+    background-color: #fff;
+    color: #333;
+    padding-bottom: 0.5rem;
+    margin-bottom: -1rem;
+}
+
+.contact-section h3 {
+    font-size: 1.1rem;
+    color: #444;
+    margin-bottom: 1.5rem;
+}
+
+.contact-section .form-label {
+    font-size: 0.875rem;
+    margin-bottom: 0.35rem;
+    color: #666;
+}
+
+.contact-section .form-control-sm {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 8px 10px;
+    font-size: 0.875rem;
+    box-shadow: none;
+    transition: border-color 0.3s ease;
+}
+
+.contact-section .form-control-sm:focus {
+    border-color: #730773;
+    outline: none;
+    box-shadow: none;
+}
+
+.divider-section {
+    background-color: #fff;
+    padding: 0;
+    padding-top: 0.5rem;
+    padding-bottom: 2.5rem;
+}
+
+.custom-hr {
+    width: 110%;
+    height: 1px;
+    background-color: #8a8b8bff;
+    border: none;
+    margin: 0;
+    margin-left: -5%;
+}
+
+.button-section {
+    background-color: #fff;
+}
+
+.button-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5rem;
+}
+
+.g-recaptcha {
+    transform: scale(0.95);
+    transform-origin: 0 0;
+    margin-left: -5%;
+}
+
+.btn-send {
+    padding: 13px 60px;
+    border-radius: 50px;
+    font-weight: 500;
+    font-size: 1rem;
+    text-transform: uppercase;
+    border: 2px solid transparent;
+    background: linear-gradient(white, white) padding-box,
+        linear-gradient(90deg, #730773, #0073ff) border-box;
+    color: #125ab3;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.lokasi-section {
+    background-color: #fff;
+    padding: 1.5rem 0;
+    padding-left: 12rem;
+}
+
+.lokasi-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #666;
+    text-transform: uppercase;
+    margin-bottom: 4rem;
+}
+
+.kantor-item {
+    margin-bottom: 2rem;
+}
+
+.kantor-subtitle {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #666;
+    margin-bottom: 0.75rem;
+}
+
+.kantor-text {
+    font-size: 0.85rem;
+    color: #666;
+    margin-bottom: 0.35rem;
+}
+
+@media (max-width: 768px) {
+    .lokasi-section {
+        padding: 2rem 0;
+    }
+
+    .lokasi-title {
+        font-size: 0.9rem;
+    }
+
+    .kantor-subtitle {
+        font-size: 0.85rem;
+    }
+
+    .kantor-text {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-section {
+        margin-bottom: -0.5rem;
+    }
+
+    .divider-section {
+        padding: 0.5rem 0;
+    }
+
+    .button-wrapper {
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+
+    .btn-send {
+        padding: 8px 25px;
+        font-size: 0.8rem;
+    }
+
+    .g-recaptcha {
+        transform: scale(0.85);
+        transform-origin: 0 0;
+        margin-left: -5%;
+    }
+
+    .custom-hr {
+        width: 110%;
+        margin-left: -5%;
+    }
+}
+
+@media (max-width: 576px) {
+    .button-wrapper {
+        gap: 0.5rem;
+    }
+
+    .g-recaptcha {
+        transform: scale(0.75);
+        transform-origin: 0 0;
+        margin-left: -5%;
+    }
+
+    .btn-send {
+        padding: 6px 20px;
+        font-size: 0.75rem;
+    }
+}
+
+@media (min-width: 769px) {
+    .contact-section .col-lg-8 {
+        max-width: 750px;
+    }
+}
+
+@media (max-width: 992px) {
+    .hukami-section {
+        height: 380px;
+        padding: 0 8vw 4vh;
+        background-position: center;
+    }
+
+    .hukami-content h2 {
+        font-size: 1.75rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .hukami-section {
+        height: 280px;
+        padding: 0 6vw 3vh;
+    }
+
+    .hukami-content h2 {
+        font-size: 1.5rem;
+    }
+}

@@ -1,5 +1,3 @@
-
-
 @extends('layouts.app')
 
 @section('title', 'Inaklug | Layanan Kami')
@@ -17,11 +15,11 @@
   <div class="container text-center">
     <h2>Layanan Kami</h2>
 
-    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 justify-content-center">
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-0 justify-content-center">
 
       <div class="col">
         <div class="custom-card-kami">
-          <img src="{{ asset('images/bachelor.jpg') }}" class="card-img" alt="Program 1">
+          <img src="{{ asset('images/bachelor.png') }}" class="card-img" alt="Program 1">
           <div class="gradient-overlay-kami"></div>
           <div class="left-line-kami"></div>
           <div class="card-content-kami">
@@ -102,7 +100,7 @@
 
     <div class="lkami-buttons">
       <a href="#" class="btn-lokasi-lkami">LOKASI KAMI</a>
-      <a href="#" class="btn-pesan-lkami">KIRIM PESAN</a>
+      <a href="hubungikami" class="btn-pesan-lkami">KIRIM PESAN</a>
     </div>
   </div>
 </section>

@@ -58,21 +58,29 @@ body {
     color: #4a4a4a;
 }
 
-.layanan-kami-section .row {
-    --bs-gutter-x: 20px;
-    --bs-gutter-y: 20px;
+.layanan-kami-section .col {
+    flex: 0 0 auto;
+    width: auto !important;
+    padding: 0 8px !important;
 }
 
 .custom-card-kami {
     position: relative;
-    width: 100%;
+    width: 300px;
     aspect-ratio: 4 / 3;
     border-radius: 6px;
     overflow: hidden;
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     margin: 0 auto;
-    max-width: 360px;
+    height: 150px;
+}
+
+.layanan-kami-section .row {
+    --bs-gutter-x: 12px !important;
+    --bs-gutter-y: 15px !important;
+    justify-content: center;
+    gap: 5px;
 }
 
 .custom-card-kami:hover {

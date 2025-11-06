@@ -39,7 +39,7 @@
   </div>
 
   <div class="btn-wrapper">
-    <a href="#" class="btn-layanan">Layanan Kami</a>
+    <a href="layanankami" class="btn-layanan">Layanan Kami</a>
   </div>
 </section>
 
@@ -56,7 +56,7 @@
 
     <div class="hubungi-tentang-buttons">
       <a href="#" class="btn-lokasi-tentang">LOKASI KAMI</a>
-      <a href="#" class="btn-pesan-tentang">KIRIM PESAN</a>
+      <a href="hubungikami" class="btn-pesan-tentang">KIRIM PESAN</a>
     </div>
   </div>
 </section>

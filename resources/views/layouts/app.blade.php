@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="{{ asset('css/home.css') }}">
     <link rel="stylesheet" href="{{ asset('css/tentangkami.css') }}">
     <link rel="stylesheet" href="{{ asset('css/layanankami.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/artikelkami.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/hubungikami.css') }}">
     <link rel="stylesheet" href="{{ asset('css/footer.css') }}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
